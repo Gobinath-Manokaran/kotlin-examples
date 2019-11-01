@@ -1,3 +1,5 @@
+//Data class is just to store state/data
+
 data class Customer(val name: String, val age: Int, val city: String)
 
 fun main(){

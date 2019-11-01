@@ -1,16 +1,13 @@
 fun main(args: Array<String>) {
-    println("Enter Two numbers")
-    val a = readLine()!!.toInt()
-    val b = readLine()!!.toInt()
-    println("Enter operator either +, -, * or /")
-    val operator = readLine()
-    var result = when (operator) {
-        "+" -> (a + b)
-        "-" -> (a - b)
-        "*" -> (a * b)
-        "/" -> (a / b)
-        else -> 0
+    var n =1
+    var str = ""
+    if(n>0){
+        str = "positive"
+    } else {
+        str = "negative"
     }
-    println("" + a + " " + operator + " " + b + " = " + result)
-    println("$a $operator $b = $result")
+    println("The number " + n + " is " + str)
+
+    println("The number $n is ${if(n>0) "positive" else "negative"}")
 }
+
